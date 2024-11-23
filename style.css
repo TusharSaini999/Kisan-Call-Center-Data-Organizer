@@ -22,6 +22,28 @@ h1 {
 .form-group {
   margin-bottom: 15px;
 }
+#navbar {
+      background-color: #4CAF50; /* Green background */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      font-size: 18px;
+    }
+
+    #navbar .title {
+      margin: 0;
+      font-weight: bold;
+    }
+
+    #google_translate_element select {
+      border: none;
+      padding: 5px;
+      font-size: 16px;
+      background-color: white;
+      border-radius: 4px;
+    }
 
 label {
   font-weight: bold;
