@@ -19,7 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-
+  function populateMonths() {
+    for (let month = 1; month <= 12; month++) {
+      const option = document.createElement('option');
+      option.value = month;
+      option.textContent = month;
+      monthSelect.appendChild(option);
+    }
+  }
 
   function populateStates(data) {
     const states = [...new Set(data.map(record => record.StateName).filter(Boolean))].sort();
