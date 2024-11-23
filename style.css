@@ -37,7 +37,7 @@ h1 {
       font-weight: bold;
     }
 
-   #google-translate-element {
+   #google_translate_element {
       display: inline-block;
       background-color: white;
       border-radius: 5px;
@@ -45,7 +45,7 @@ h1 {
       font-size: 16px;
     }
 
-    #google-translate-element select {
+    #google_translate_element select {
       border: none;
       padding: 5px 8px;
       font-size: 14px;
@@ -55,7 +55,7 @@ h1 {
       cursor: pointer;
     }
 
-    #google-translate-element select:hover {
+    #google_translate_element select:hover {
       background-color: #e6e6e6;
     }
 
