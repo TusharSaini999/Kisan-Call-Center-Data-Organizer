@@ -37,12 +37,26 @@ h1 {
       font-weight: bold;
     }
 
-    #google_translate_element select {
-      border: none;
-      padding: 5px;
-      font-size: 16px;
+   #google-translate-element {
+      display: inline-block;
       background-color: white;
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 16px;
+    }
+
+    #google-translate-element select {
+      border: none;
+      padding: 5px 8px;
+      font-size: 14px;
+      color: #333;
+      background-color: #f9f9f9;
       border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #google-translate-element select:hover {
+      background-color: #e6e6e6;
     }
 
 label {
