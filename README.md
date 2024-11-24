@@ -22,7 +22,7 @@ The system aims to:
 ---
 
 ### 🌐 Live Demo  
-Check out the website here: [Kisan Call Center Data Organizer](https://kisan-call-center-data.netlify.app/)  
+Check out the website here: [Kisan Call Center Data Organizer](https://kisan-call-center-data.netlify.app/)  https://kisan-call-center-data.netlify.app/
 
 ---
 
