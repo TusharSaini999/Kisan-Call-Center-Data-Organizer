@@ -58,7 +58,9 @@ h1 {
     #google_translate_element {
         justify-content: center; /* Center-aligns the translator on smaller screens */
     }
-
+    #navbar .title{
+      display: none;
+    }
     .goog-te-combo {
         font-size: 12px; /* Adjusts the font size */
         max-width: 150px; /* Restricts the width further */
