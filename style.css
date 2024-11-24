@@ -35,15 +35,41 @@ h1 {
     #navbar .title {
       margin: 0;
       font-weight: bold;
+      font-size: large;
     }
 
    #google_translate_element {
       display: inline-block;
       background-color: white;
       border-radius: 5px;
-      padding: 5px 10px;
+      padding: 5px;
       font-size: 16px;
+      margin-right: 50px;
     }
+
+/* Style the Google Translate container */
+#google_translate_element {
+  font-family: Arial, sans-serif; /* Match the website's font */
+}
+
+/* Customize the text within the widget */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+
+body {
+  top: 0px !important; /* Prevents extra padding added by Translate */
+}
+
+/* Optional: Restrict the width of the dropdown */
+.goog-te-combo {
+  width: 150px; /* Adjust the dropdown width */
+}
+
+/* Hide the branding background but keep the text visible (mandatory) */
+.goog-logo-link {
+  display: none !important; /* Removes the "Google Translate" branding */
+}
 
     #google_translate_element select {
       border: none;
