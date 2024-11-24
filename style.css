@@ -38,15 +38,32 @@ h1 {
       font-size: large;
     }
 
-   #google_translate_element {
-      display: inline-block;
-      background-color: white;
-      border-radius: 5px;
-      padding: 5px;
-      font-size: 16px;
-      margin-right: 50px;
+    #google_translate_element {
+      display: flex;
+      justify-content: flex-end; /* Aligns the translator to the right */
+      padding: 10px;
+      max-width: 100%;
+      box-sizing: border-box;
+  }
+  .goog-te-combo {
+    width: 100%; /* Makes the dropdown full width */
+    max-width: 200px; /* Restricts the maximum size */
+    font-size: 14px;
+    padding: 5px;
+    margin: 0 auto; /* Center-aligns on smaller screens */
+}
+
+/* Media query for small devices */
+@media screen and (max-width: 600px) {
+    #google_translate_element {
+        justify-content: center; /* Center-aligns the translator on smaller screens */
     }
 
+    .goog-te-combo {
+        font-size: 12px; /* Adjusts the font size */
+        max-width: 150px; /* Restricts the width further */
+    }
+}
 /* Style the Google Translate container */
 #google_translate_element {
   font-family: Arial, sans-serif; /* Match the website's font */
