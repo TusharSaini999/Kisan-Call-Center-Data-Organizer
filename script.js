@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ...filters
     });
 
-    const response = await fetch(`${apiUrl}?${queryParams.toString()}`);
+    const response = await fetch(`/api&${queryParams.toString()}`);
     const data = await response.json();
     return data.records;
   }
