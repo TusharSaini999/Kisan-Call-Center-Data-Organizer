@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchData(filters = {}) {
     const queryParams = new URLSearchParams({
-      'api-key': 'API_KEY_PLACEHOLDER',
       'format': 'json',
       'limit': 1000,
       ...filters
