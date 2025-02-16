@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const qaContainer = document.getElementById('qaContainer');
 
   const apiUrl = 'https://api.data.gov.in/resource/cef25fe2-9231-4128-8aec-2c948fedd43f';
-  const apiKey = '579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b';
+  const apiKey = process.env.REACT_APP_API_KEY;
 
   function populateYears() {
     const currentYear = new Date().getFullYear();
