@@ -6,8 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterBtn = document.getElementById('filterBtn');
   const qaContainer = document.getElementById('qaContainer');
 
-  const apiUrl = 'https://api.data.gov.in/resource/cef25fe2-9231-4128-8aec-2c948fedd43f';
-  const apiKey = process.env.REACT_APP_API_KEY;
+  const apiUrl = '/api'; // Netlify redirects will handle
+
+    const response = await fetch(`${apiUrl}?${queryParams.toString()}`);
+    const data = await response.json();
+    return data.records;
+  }
 
   function populateYears() {
     const currentYear = new Date().getFullYear();
@@ -52,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function fetchData(filters = {}) {
     const queryParams = new URLSearchParams({
-      'api-key': apiKey,
+      'api-key': 'API_KEY_PLACEHOLDER',
       'format': 'json',
       'limit': 1000,
       ...filters
